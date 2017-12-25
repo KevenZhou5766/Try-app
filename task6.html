@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>护工网</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="./bootstrap.min.js"></script>
+
+    <!--personal changes-->
+    <link rel="stylesheet" href="task6.css">
+
+    <!--jQuery file-->
+    <script src="./jquery-3.2.1.min.js"></script>
+
+    <script>
+        function demoA(){
+                document.getElementById("btnA").style.background="white";
+                document.getElementById("btnA").style.color="#00aeae";
+                document.getElementById("btnB").style.background="#00aeae";
+                document.getElementById("btnB").style.color="white";
+            }
+            function demoB(){
+                document.getElementById("btnB").style.background="white";
+                document.getElementById("btnB").style.color="#00aeae";
+                document.getElementById("btnA").style.background="#00aeae";
+                document.getElementById("btnA").style.color="white";
+        }
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+</head>
+
+
+<body>
+    <header class="header">
+
+      <div class="choosebox">
+
+          <button id="btnA" class="btn btn-info btn-choose" onclick="demoA()">找雇主</button>
+          <button id="btnB" class="btn btn-info btn-choose" onclick="demoB()">找护工</button>
+
+      </div>
+      <div class="ur-location">
+        <span class="glyphicon glyphicon-map-marker"></span>
+      </div>
+    </header>
+    <main>
+        <!--信息筛选表-->
+        <div class="selection ">
+            <table class="ta">
+            <tr>
+                <td class="dropdown tb1">区域
+                    <span class="glyphicon glyphicon-triangle-bottom dropicon"></span>
+                    <div class="dropdown-content">
+                        <ul type="none">
+                            <li>嘉定区</li>
+                            <li>静安区</li>
+                            <li>黄浦区</li>
+                            <li>宝山区</li>
+                        </ul>
+                    </div>
+                </td>
+                <td class="dropdown tb1">服务时间
+                    <span class="glyphicon glyphicon-triangle-bottom dropicon"></span>
+                    <div class="dropdown-content">
+                        <ul type="none">
+                            <li>今日</li>
+                            <li>本周</li>
+                            <li>本月</li>
+                            <li>更长</li>
+                        </ul>
+                    </div>
+                </td>
+                <td class="dropdown tb2">病人情况
+                    <span class="glyphicon glyphicon-triangle-bottom dropicon"></span>
+                    <div class="dropdown-content">
+                        <ul type="none">
+                            <li>可活动</li>
+                            <li>卧床</li>
+                            <li>昏迷</li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            </table>
+        </div>
+        <!--信息栏-->
+        <>
+    </main>
+    <footer class="footer">
+        <span></span>
+    </footer>
+</body>
+
+</html>
+
